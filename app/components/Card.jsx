@@ -13,7 +13,7 @@ export default function Card({ image, title, price, id  }) {
     const dispatch = useDispatch();
     const wishlistItems = useSelector((state) => state.wishList.items);
     const rating = 4; 
-    const [user , setUser]=useState(localStorage.getItem("email"))
+    const [user , setUser]=useState(typeof window !== "undefined"? localStorage.getItem("email"):"")
     
     
     const sendWichLitData = () => {
