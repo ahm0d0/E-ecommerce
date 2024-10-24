@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+body::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #f79797; 
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 10px; 
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.blur-background {
+  background: rgba(0, 0, 0, 0.342);
+  backdrop-filter: blur(50px) !important;
+}
+input[type="checkbox"]:checked {
+  background-color: #f87171 !important; 
+  border-color: transparent; 
+}
+
