@@ -2,7 +2,7 @@
 import React,{useState} from 'react';
 
 export default function MyAccount() {
-    const [user,setUser]=useState(localStorage.getItem("email"))
+    const [user,setUser]=useState(typeof window !== "undefined"? localStorage.getItem("email"):"")
     const [formData, setFormData] = useState({
         firstName: `${user}`,
         lastName: 'Rimel',
