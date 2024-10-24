@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 
 export default function NavBar() {
   const router = useRouter()
-  const [userCheck, setUserCheck] = useState(useState(() => localStorage.getItem("email") || ""));
+  const [userCheck, setUserCheck] = useState(useState(() => typeof window !== "undefined"? localStorage.getItem("email"):""));
   const [isOpen, setIsOpen] = useState(false);
   const wishlistItems = useSelector((state) => state.wishList.items);
   const CartItems = useSelector((state) => state.cart.items);
