@@ -47,7 +47,7 @@ export default function NavBar() {
         </div>
         <nav className="flex space-x-2 md:space-x-8 md:p-5 text-xs md:text-lg">
           <Link href="/" className="transition-all border-b-2 border-white hover:border-gray-200 hover:border-b-2">Home</Link>
-          <Link href="#" className="transition-all border-b-2 border-white hover:border-gray-200 hover:border-b-2">Content</Link>
+          <Link href="/content" className="transition-all border-b-2 border-white hover:border-gray-200 hover:border-b-2">Content</Link>
           <Link href="/about" className="transition-all border-b-2 border-white hover:border-gray-200 hover:border-b-2">About Us</Link>
           <Link href="/Signup" className="transition-all border-b-2 border-white hover:border-gray-200 hover:border-b-2">Sign Up</Link>
         </nav>
